@@ -1,0 +1,948 @@
+{
+  "search_metadata": {
+    "id": "search_J70QVB41KphqV9JWgkqLy9mx",
+    "status": "Success",
+    "created_at": "2025-11-06T12:17:26Z",
+    "request_time_taken": 4.46,
+    "parsing_time_taken": 0.01,
+    "total_time_taken": 4.47,
+    "request_url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI1LTEyLTEwagcIARIDQk9NcgcIARIDQkJJGh4SCjIwMjYtMDItMTBqBwgBEgNCQklyBwgBEgNCT01AAUgBcAGCAQsI____________AZgBAQ&tfu=EgIIAiIDEgEw&hl=en&gl=in&curr=INR",
+    "html_url": "https://www.searchapi.io/api/v1/searches/search_J70QVB41KphqV9JWgkqLy9mx.html",
+    "json_url": "https://www.searchapi.io/api/v1/searches/search_J70QVB41KphqV9JWgkqLy9mx"
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "departure_id": "BOM",
+    "arrival_id": "BBI",
+    "currency": "INR",
+    "hl": "en",
+    "gl": "in",
+    "outbound_date": "2025-12-10",
+    "return_date": "2026-02-10",
+    "flight_type": "round_trip",
+    "travel_class": "economy",
+    "stops": "any",
+    "sort_by": "price",
+    "adults": "1",
+    "children": "0",
+    "infants_in_seat": "0",
+    "infants_on_lap": "0"
+  },
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "05:30"
+          },
+          "arrival_airport": {
+            "name": "Visakhapatnam international airport",
+            "id": "VTZ",
+            "date": "2025-12-10",
+            "time": "07:40"
+          },
+          "duration": 130,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 5248",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 79 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 79
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Visakhapatnam international airport",
+            "id": "VTZ",
+            "date": "2025-12-10",
+            "time": "11:00"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "12:35"
+          },
+          "duration": 95,
+          "airplane": "ATR 72",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 7381",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 41 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 41
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 200,
+          "name": "Visakhapatnam international airport",
+          "id": "VTZ"
+        }
+      ],
+      "total_duration": 425,
+      "carbon_emissions": {
+        "this_flight": 121000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 19,
+        "lowest_route": 117000
+      },
+      "price": 11313,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZzAyUlRVeU5EaDhOa1UzTXpneEdnb0lzVmdRQUJvRFNVNVNPQnh3M0dNPSIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIlZUWiIsbnVsbCwiNkUiLCI1MjQ4Il0sWyJWVFoiLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCI2RSIsIjczODEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "02:45"
+          },
+          "arrival_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "04:15"
+          },
+          "duration": 90,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 564",
+          "is_overnight": true,
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 53 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 53
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "07:00"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "08:30"
+          },
+          "duration": 90,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6242",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 63 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 63
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 165,
+          "name": "Rajiv Gandhi International Airport",
+          "id": "HYD",
+          "is_overnight": true
+        }
+      ],
+      "total_duration": 345,
+      "carbon_emissions": {
+        "this_flight": 117000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 15,
+        "lowest_route": 117000
+      },
+      "price": 11880,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ3cyUlRVMk5IdzJSVFl5TkRJYUNnam9YQkFBR2dOSlRsSTRISERjYUE9PSIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIkhZRCIsbnVsbCwiNkUiLCI1NjQiXSxbIkhZRCIsIjIwMjUtMTItMTAiLCJCQkkiLG51bGwsIjZFIiwiNjI0MiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "06:25"
+          },
+          "arrival_airport": {
+            "name": "Swami Vivekananda Airport, Raipur",
+            "id": "RPR",
+            "date": "2025-12-10",
+            "time": "08:10"
+          },
+          "duration": 105,
+          "airplane": "Airbus A320neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 5151",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 75 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 75
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Swami Vivekananda Airport, Raipur",
+            "id": "RPR",
+            "date": "2025-12-10",
+            "time": "11:10"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "12:10"
+          },
+          "duration": 60,
+          "airplane": "Airbus A320neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6521",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 46 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 46
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 180,
+          "name": "Swami Vivekananda Airport, Raipur",
+          "id": "RPR"
+        }
+      ],
+      "total_duration": 345,
+      "carbon_emissions": {
+        "this_flight": 122000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 20,
+        "lowest_route": 117000
+      },
+      "price": 11880,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZzAyUlRVeE5URjhOa1UyTlRJeEdnb0k2RndRQUJvRFNVNVNPQnh3M0dnPSIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIlJQUiIsbnVsbCwiNkUiLCI1MTUxIl0sWyJSUFIiLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCI2RSIsIjY1MjEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "08:20"
+          },
+          "arrival_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "09:45"
+          },
+          "duration": 85,
+          "airplane": "Airbus A320neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 5246",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 58 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 58
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "12:35"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "14:10"
+          },
+          "duration": 95,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6911",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 63 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 63
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 170,
+          "name": "Rajiv Gandhi International Airport",
+          "id": "HYD"
+        }
+      ],
+      "total_duration": 350,
+      "carbon_emissions": {
+        "this_flight": 121000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 19,
+        "lowest_route": 117000
+      },
+      "price": 11880,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZzAyUlRVeU5EWjhOa1UyT1RFeEdnb0k2RndRQUJvRFNVNVNPQnh3M0dnPSIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIkhZRCIsbnVsbCwiNkUiLCI1MjQ2Il0sWyJIWUQiLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCI2RSIsIjY5MTEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "12:20"
+          },
+          "arrival_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "13:50"
+          },
+          "duration": 90,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6397",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 53 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 53
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "16:25"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "17:55"
+          },
+          "duration": 90,
+          "airplane": "Airbus A320neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6197",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 67 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 67
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 155,
+          "name": "Rajiv Gandhi International Airport",
+          "id": "HYD"
+        }
+      ],
+      "total_duration": 335,
+      "carbon_emissions": {
+        "this_flight": 121000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 19,
+        "lowest_route": 117000
+      },
+      "price": 11880,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZzAyUlRZek9UZDhOa1UyTVRrM0dnb0k2RndRQUJvRFNVNVNPQnh3M0dnPSIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIkhZRCIsbnVsbCwiNkUiLCI2Mzk3Il0sWyJIWUQiLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCI2RSIsIjYxOTciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "16:55"
+          },
+          "arrival_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "18:25"
+          },
+          "duration": 90,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 5228",
+          "is_often_delayed": true,
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 53 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 53
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Rajiv Gandhi International Airport",
+            "id": "HYD",
+            "date": "2025-12-10",
+            "time": "20:05"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "21:40"
+          },
+          "duration": 95,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 922",
+          "is_often_delayed": true,
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 63 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 63
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 100,
+          "name": "Rajiv Gandhi International Airport",
+          "id": "HYD"
+        }
+      ],
+      "total_duration": 285,
+      "carbon_emissions": {
+        "this_flight": 117000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 15,
+        "lowest_route": 117000
+      },
+      "price": 11880,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ3cyUlRVeU1qaDhOa1U1TWpJYUNnam9YQkFBR2dOSlRsSTRISERjYUE9PSIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIkhZRCIsbnVsbCwiNkUiLCI1MjI4Il0sWyJIWUQiLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCI2RSIsIjkyMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "13:35"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "15:45"
+          },
+          "duration": 130,
+          "airplane": "Airbus A320neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6274",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 98 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 98
+          }
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 98000,
+        "typical_for_this_route": 102000,
+        "difference_percent": -4,
+        "lowest_route": 117000
+      },
+      "price": 12457,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ1kyUlRZeU56UWFDZ2lwWVJBQUdnTkpUbEk0SEhEbmJRPT0iLFtbIkJPTSIsIjIwMjUtMTItMTAiLCJCQkkiLG51bGwsIjZFIiwiNjI3NCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "18:15"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "20:30"
+          },
+          "duration": 135,
+          "airplane": "Airbus A320",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 6199",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 115 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 115
+          }
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 115000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 13,
+        "lowest_route": 117000
+      },
+      "price": 13402,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ1kyUlRZeE9Ua2FDZ2phYUJBQUdnTkpUbEk0SEhDUmRnPT0iLFtbIkJPTSIsIjIwMjUtMTItMTAiLCJCQkkiLG51bGwsIjZFIiwiNjE5OSJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "05:50"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "08:15"
+          },
+          "duration": 145,
+          "airplane": "Airbus A321neo",
+          "airline": "IndiGo",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+          "travel_class": "Economy",
+          "flight_number": "6E 5147",
+          "extensions": [
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 92 kg"
+          ],
+          "detected_extensions": {
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 92
+          }
+        }
+      ],
+      "total_duration": 145,
+      "carbon_emissions": {
+        "this_flight": 93000,
+        "typical_for_this_route": 102000,
+        "difference_percent": -9,
+        "lowest_route": 117000
+      },
+      "price": 14347,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/6E.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ1kyUlRVeE5EY2FDZ2lMY0JBQUdnTkpUbEk0SEhDOGZnPT0iLFtbIkJPTSIsIjIwMjUtMTItMTAiLCJCQkkiLG51bGwsIjZFIiwiNTE0NyJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "13:00"
+          },
+          "arrival_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "date": "2025-12-10",
+            "time": "15:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A320neo",
+          "airline": "Air India",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AI.png",
+          "travel_class": "Economy",
+          "flight_number": "AI 2677",
+          "extensions": [
+            "In-seat USB outlet",
+            "Stream video to own device",
+            "Seat type Below Average Legroom",
+            "Legroom 28 inches",
+            "Carbon emission: 100 kg"
+          ],
+          "detected_extensions": {
+            "has_in_seat_usb_outlet": true,
+            "has_stream_video_to_own_device": true,
+            "seat_type": "Below Average Legroom",
+            "legroom_short": "28 in",
+            "legroom_long": "28 inches",
+            "carbon_emission": 100
+          }
+        },
+        {
+          "departure_airport": {
+            "name": "Indira Gandhi International Airport",
+            "id": "DEL",
+            "date": "2025-12-10",
+            "time": "17:25"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "19:40"
+          },
+          "duration": 135,
+          "airplane": "Airbus A320",
+          "airline": "Air India Express",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IX.png",
+          "travel_class": "Economy",
+          "flight_number": "IX 1064",
+          "ticket_also_sold_by": [
+            "Air India"
+          ],
+          "extensions": [
+            "Carbon emission: 100 kg"
+          ],
+          "detected_extensions": {
+            "carbon_emission": 100
+          }
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 130,
+          "name": "Indira Gandhi International Airport",
+          "id": "DEL"
+        }
+      ],
+      "total_duration": 400,
+      "carbon_emissions": {
+        "this_flight": 201000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 97,
+        "lowest_route": 117000
+      },
+      "price": 14954,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZzFCU1RJMk56ZDhTVmd4TURZMEdnb0k2blFRQUJvRFNVNVNPQnh3NklNQiIsW1siQk9NIiwiMjAyNS0xMi0xMCIsIkRFTCIsbnVsbCwiQUkiLCIyNjc3Il0sWyJERUwiLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCJJWCIsIjEwNjQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "13:05"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "15:25"
+          },
+          "duration": 140,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Air India Express",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IX.png",
+          "travel_class": "Economy",
+          "flight_number": "IX 1247",
+          "ticket_also_sold_by": [
+            "Air India"
+          ],
+          "is_often_delayed": true,
+          "extensions": [
+            "Carbon emission: 113 kg"
+          ],
+          "detected_extensions": {
+            "carbon_emission": 113
+          }
+        }
+      ],
+      "total_duration": 140,
+      "carbon_emissions": {
+        "this_flight": 113000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 11,
+        "lowest_route": 117000
+      },
+      "price": 17396,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IX.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ2hKV0RFeU5EY2pNUm9MQ1BTSEFSQUFHZ05KVGxJNEhIQ3NtUUU9IixbWyJCT00iLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCJJWCIsIjEyNDciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "id": "BOM",
+            "date": "2025-12-10",
+            "time": "18:25"
+          },
+          "arrival_airport": {
+            "name": "Biju Patnaik International Airport",
+            "id": "BBI",
+            "date": "2025-12-10",
+            "time": "20:45"
+          },
+          "duration": 140,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Air India Express",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IX.png",
+          "travel_class": "Economy",
+          "flight_number": "IX 1024",
+          "ticket_also_sold_by": [
+            "Air India"
+          ],
+          "extensions": [
+            "Carbon emission: 113 kg"
+          ],
+          "detected_extensions": {
+            "carbon_emission": 113
+          }
+        }
+      ],
+      "total_duration": 140,
+      "carbon_emissions": {
+        "this_flight": 113000,
+        "typical_for_this_route": 102000,
+        "difference_percent": 11,
+        "lowest_route": 117000
+      },
+      "price": 18393,
+      "type": "Round trip",
+      "extensions": [
+        "Bag and fare conditions depend on the return flight"
+      ],
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IX.png",
+      "departure_token": "WyJDalJJWkdaSFpIWndhbEl4UVhkQlEwcEVja0ZDUnkwdExTMHRMUzB0TFMxNWJHOXlNMEZCUVVGQlIydE5hMlJuVERaT2VrdEJFZ2hKV0RFd01qUWpNUm9MQ05tUEFSQUFHZ05KVGxJNEhIQ1JvZ0U9IixbWyJCT00iLCIyMDI1LTEyLTEwIiwiQkJJIixudWxsLCJJWCIsIjEwMjQiXV1d"
+    }
+  ],
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BOM",
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai"
+          },
+          "city": "Mumbai",
+          "country": "India",
+          "country_code": "IN",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ5Q0R5IIxjWsuWKt6lnlBIOlNfNwTqC8yBtOP_uMdzFrluYmn3jZ-6dyEWo6AbIH3x57scrUgF3gvWA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqVWevN4qkQ8u4HrxtHbv2Oy7UigPckL8bgZUJQWQgjvmJxG7oggYxd2Rw5MwjiBYzZFpr939opSbON9CxkwdD-7DK9it3TPq1ea8pxU"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "BBI",
+            "name": "Biju Patnaik International Airport"
+          },
+          "city": "Bhubaneswar",
+          "country": "India",
+          "country_code": "IN",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJeETBg8aB6ssaLa7BfsAUmSYW6TDL6wjZfMLkQa5DNNYAzMyJ2nCLSbx4YKOFHsZLlPxpYYffCJxxQ",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgyrz1X38KHsJo6O9j7xpW4nkij6Z8DIx-TvmDRO8mA9KOkTaH5fB_lNHLG3r8TaFOM7kisXr8Ytop7D7gxC1TE6eRzfK3zlJ7pITw6bU"
+        }
+      ]
+    },
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "BBI",
+            "name": "Biju Patnaik International Airport"
+          },
+          "city": "Bhubaneswar",
+          "country": "India",
+          "country_code": "IN",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJeETBg8aB6ssaLa7BfsAUmSYW6TDL6wjZfMLkQa5DNNYAzMyJ2nCLSbx4YKOFHsZLlPxpYYffCJxxQ",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgyrz1X38KHsJo6O9j7xpW4nkij6Z8DIx-TvmDRO8mA9KOkTaH5fB_lNHLG3r8TaFOM7kisXr8Ytop7D7gxC1TE6eRzfK3zlJ7pITw6bU"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "BOM",
+            "name": "Chhatrapati Shivaji Maharaj International Airport Mumbai"
+          },
+          "city": "Mumbai",
+          "country": "India",
+          "country_code": "IN",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ5Q0R5IIxjWsuWKt6lnlBIOlNfNwTqC8yBtOP_uMdzFrluYmn3jZ-6dyEWo6AbIH3x57scrUgF3gvWA",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqVWevN4qkQ8u4HrxtHbv2Oy7UigPckL8bgZUJQWQgjvmJxG7oggYxd2Rw5MwjiBYzZFpr939opSbON9CxkwdD-7DK9it3TPq1ea8pxU"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Caches
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual env and modules
+node_modules/
+.venv/
