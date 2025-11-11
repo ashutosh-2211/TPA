@@ -10,3 +10,7 @@ __pycache__/
 # Virtual env and modules
 node_modules/
 .venv/
+
+# JSON files
+*.json
+!IATA.json

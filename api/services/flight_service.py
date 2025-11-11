@@ -1,6 +1,7 @@
 import requests
 import json
 from functools import lru_cache
+
 from config import config
 
 
@@ -32,7 +33,7 @@ def get_flight_details(
 ):
     """Fetches flight data from SearchAPI.io and saves the result to data.json"""
 
-    url = config.flight_api_url
+    url = config.base_api_url
     departure_iata = get_iata(departure)
     arrival_iata = get_iata(arrival)
 
@@ -41,7 +42,7 @@ def get_flight_details(
         return
 
     # Start with base params from config
-    params = config.default_params.copy()
+    params = config.default_flight_params.copy()
     params.update({
         "departure_id": departure_iata,
         "arrival_id": arrival_iata,
@@ -77,9 +78,7 @@ def get_flight_details(
 
     print("✅ Flight data saved to data.json")
 
-    # Print short summary
-    for flight in data.get("best_flights", []):
-        print("-", flight.get("price"), "INR")
+    return data
 
 
 # ---------- Parser: Read saved JSON ----------
@@ -118,7 +117,7 @@ def parse_flight_data(file_path="data.json"):
 
 # ---------- Entry point ----------
 if __name__ == "__main__":
-    get_flight_details(
+    data = get_flight_details(
         departure="Mumbai",
         arrival="Bhubaneswar",
         outbound_date="2025-12-10",
