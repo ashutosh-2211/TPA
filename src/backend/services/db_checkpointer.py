@@ -11,7 +11,7 @@ from typing import Optional, Any, Iterator
 from datetime import datetime
 from contextlib import contextmanager
 
-from langgraph.checkpoint.base import BaseCheckpointSaver, Checkpoint, CheckpointMetadata
+from langgraph.checkpoint.base import BaseCheckpointSaver, Checkpoint, CheckpointMetadata, CheckpointTuple
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
@@ -165,28 +165,65 @@ class PostgresCheckpointer(BaseCheckpointSaver):
             logger.error(f"❌ Error retrieving checkpoint: {e}")
             return None
 
-    async def aget(self, config: dict) -> Optional[Checkpoint]:
-        """Async version of get - delegates to sync version"""
-        return self.get(config)
-    
-    async def aget_tuple(self, config: dict):
+    def get_tuple(self, config: dict):
         """
-        Get checkpoint tuple (checkpoint, metadata, parent_config).
-        Required by LangGraph's async workflow.
+        Get checkpoint tuple (config, checkpoint, metadata, parent_config, pending_writes).
+        Sync version required by LangGraph.
+        Returns a CheckpointTuple named tuple.
         """
         checkpoint = self.get(config)
         if checkpoint is None:
             return None
         
-        # Return tuple of (checkpoint, metadata, parent_config)
+        # Create metadata dict
         metadata = {
             "source": "input",
             "step": -1,
             "writes": None,
         }
         parent_config = None
+        pending_writes = []
         
-        return (checkpoint, metadata, parent_config)
+        # Return CheckpointTuple named tuple
+        return CheckpointTuple(
+            config=config,
+            checkpoint=checkpoint,
+            metadata=metadata,
+            parent_config=parent_config,
+            pending_writes=pending_writes
+        )
+
+    async def aget(self, config: dict) -> Optional[Checkpoint]:
+        """Async version of get - delegates to sync version"""
+        return self.get(config)
+    
+    async def aget_tuple(self, config: dict):
+        """
+        Get checkpoint tuple (config, checkpoint, metadata, parent_config, pending_writes).
+        Required by LangGraph's async workflow.
+        Returns a CheckpointTuple named tuple.
+        """
+        checkpoint = self.get(config)
+        if checkpoint is None:
+            return None
+        
+        # Create metadata dict
+        metadata = {
+            "source": "input",
+            "step": -1,
+            "writes": None,
+        }
+        parent_config = None
+        pending_writes = []
+        
+        # Return CheckpointTuple named tuple
+        return CheckpointTuple(
+            config=config,
+            checkpoint=checkpoint,
+            metadata=metadata,
+            parent_config=parent_config,
+            pending_writes=pending_writes
+        )
 
     async def aput(
         self,

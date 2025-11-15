@@ -76,7 +76,9 @@ async def get_history(thread_id: str):
     Returns all messages in the conversation.
     """
     try:
+        logger.info(f"📖 Retrieving history for thread: {thread_id}")
         messages = get_conversation_history(thread_id)
+        logger.info(f"📖 Found {len(messages)} messages")
 
         # Convert LangChain messages to dict format
         formatted_messages = []
@@ -92,6 +94,7 @@ async def get_history(thread_id: str):
         )
 
     except Exception as e:
+        logger.error(f"❌ Error retrieving conversation history: {e}", exc_info=True)
         raise HTTPException(
             status_code=500,
             detail=f"Error retrieving conversation history: {str(e)}"
