@@ -70,3 +70,5 @@ alembic.ini.bak
 # OS files
 Thumbs.db
 .DS_Store
+
+prompt.txt
