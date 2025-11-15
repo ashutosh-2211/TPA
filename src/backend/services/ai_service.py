@@ -17,7 +17,6 @@ from langchain_core.messages import HumanMessage
 from langchain_core.tools import tool
 from langgraph.graph import StateGraph, MessagesState, START, END
 from langgraph.prebuilt import ToolNode
-from langgraph.checkpoint.memory import MemorySaver
 
 # Configure logging
 logging.basicConfig(
@@ -32,11 +31,13 @@ try:
     from .flight_service import get_flight_details, parse_flight_data_to_toon
     from .hotel_service import get_hotel_details, parse_hotel_json
     from .news_service import get_news, parse_news_data
+    from .db_checkpointer import PostgresCheckpointer
 except ImportError:
     # Fallback to absolute imports (when testing directly)
     from flight_service import get_flight_details, parse_flight_data_to_toon
     from hotel_service import get_hotel_details, parse_hotel_json
     from news_service import get_news, parse_news_data
+    from db_checkpointer import PostgresCheckpointer
 
 # Load environment variables
 load_dotenv()
@@ -446,6 +447,8 @@ def should_continue(state: AgentState) -> Literal["tools", "end"]:
 def create_agent_graph():
     """
     Creates the LangGraph agent with tool calling capability
+    
+    Uses PostgreSQL-backed checkpointer for persistent chat history.
     """
     # Initialize graph
     workflow = StateGraph(AgentState)
@@ -466,9 +469,10 @@ def create_agent_graph():
     )
     workflow.add_edge("tools", "agent")
 
-    # Compile with memory
-    memory = MemorySaver()
-    return workflow.compile(checkpointer=memory)
+    # Compile with PostgreSQL checkpointer for persistent storage
+    checkpointer = PostgresCheckpointer()
+    logger.info("🗄️ Using PostgreSQL checkpointer for persistent chat history")
+    return workflow.compile(checkpointer=checkpointer)
 
 
 # ===== PUBLIC API =====

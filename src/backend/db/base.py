@@ -4,8 +4,9 @@ Database base configuration and session management
 
 import os
 import logging
+from sqlalchemy import create_engine
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import declarative_base, sessionmaker
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -18,10 +19,20 @@ DATABASE_URL = os.getenv(
     "postgresql+asyncpg://tpa_user:tpa_password@localhost:5432/tpa_db"
 )
 
+# Sync database URL (for checkpointer)
+SYNC_DATABASE_URL = DATABASE_URL.replace("+asyncpg", "").replace("postgresql://", "postgresql+psycopg2://")
+
 # Create async engine
 engine = create_async_engine(
     DATABASE_URL,
     echo=True,  # Set to False in production
+    future=True
+)
+
+# Create sync engine (for checkpointer that needs sync operations)
+sync_engine = create_engine(
+    SYNC_DATABASE_URL,
+    echo=False,
     future=True
 )
 
@@ -30,6 +41,13 @@ async_session_maker = async_sessionmaker(
     engine,
     class_=AsyncSession,
     expire_on_commit=False
+)
+
+# Create sync session factory (for checkpointer)
+SessionLocal = sessionmaker(
+    sync_engine,
+    autocommit=False,
+    autoflush=False
 )
 
 # Base class for models
