@@ -1,0 +1,32 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.17.2",
+    "asyncpg>=0.30.0",
+    "bcrypt==4.0.1",
+    "email-validator>=2.3.0",
+    "fastapi>=0.121.0",
+    "greenlet>=3.2.4",
+    "httpx>=0.28.1",
+    "ipykernel>=7.1.0",
+    "langchain>=1.0.7",
+    "langchain-core>=1.0.5",
+    "langchain-openai>=1.0.3",
+    "langgraph>=1.0.3",
+    "langsmith>=0.4.43",
+    "openai>=2.6.1",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic>=2.12.3",
+    "pydantic-settings>=2.11.0",
+    "python-dotenv>=1.2.1",
+    "python-jose[cryptography]>=3.5.0",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.5",
+    "sqlalchemy>=2.0.44",
+    "typing>=3.10.0.0",
+    "uvicorn>=0.38.0",
+]

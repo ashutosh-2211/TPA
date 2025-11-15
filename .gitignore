@@ -1,16 +1,72 @@
 # Environment variables
 .env
+.env.local
+.env.*.local
 
-# Caches
+# Python
 __pycache__/
-*.pyc
-*.pyd
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.Python
 
-# Virtual env and modules
-node_modules/
+# Virtual environments
 .venv/
+venv/
+ENV/
+env/
+.virtualenv/
 
-# JSON files
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# JSON data files (exclude config files)
 *.json
 !IATA.json
+!package.json
+!tsconfig.json
+
+# Docker
+docker-compose.yml
+.dockerignore
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Alembic
+alembic.ini.bak
+
+# OS files
+Thumbs.db
+.DS_Store

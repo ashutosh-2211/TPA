@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
+
 class Config(BaseSettings):
     serp_key: str = os.getenv("SEARCH_API_KEY")
     base_api_url: str = "https://www.searchapi.io/api/v1/search"
@@ -37,6 +38,16 @@ class Config(BaseSettings):
         "gl": "IN",                     # Country code
         "hl": "en",                     # Language
         "currency": "INR",
+    }
+
+    default_news_params: dict = {
+        "engine": "google_news",
+        "q": "",
+        
+        # Advanced Filters
+        "gl": "IN",                     # Country code
+        "hl": "en", 
+
     }
 
     
